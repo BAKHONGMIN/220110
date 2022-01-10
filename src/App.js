@@ -1,5 +1,8 @@
 import logo from './logo.svg';
+import Gnb from './Gnb';
+// 여기 삽입
 import './App.css';
+
 
 function App() {
   return (
@@ -9,14 +12,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Gnb></Gnb>
+        {/* 여기 삽입 */}
       </header>
     </div>
   );
