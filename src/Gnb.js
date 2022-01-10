@@ -11,7 +11,7 @@ class Gnb extends Component{
 
     render(){
         return(
-            <ul id='gnb' className='gnb'> <li>메뉴삽입</li></ul>
+            <ul id='gnb' className='gnb'> <li>dd</li></ul>
         );
     }
 }
