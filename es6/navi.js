@@ -56,36 +56,36 @@ let navi = [
 // }
 
 
-// window.onload = () => {
+window.onload = () => {
 
-//     let naviTag = "";
-//     for(let i in navi){
-//         naviTag += `<li>
-//         <a href="${navi[i].d1link}">${navi[i].d1nm}</a>
-//         <ul class="d2">`;
-//     for(let j in navi[i].d2){
-//         naviTag += `<li>
-//         <a href="${navi[i].d2[j].d2link}">${navi[i].d2[j].d2nm}</li>`;
-//         }
-//         naviTag +=`</ul>
-//                     </li>`;
-//     }
-//     document.getElementById("gnb").innerHTML = naviTag;
-// }
-
-window.onload=()=>{
-
-    let navione ="";
+    let naviTag = "";
     for(let i in navi){
-        navione +=`<li><a href="${navi[i].d1link}">${navi[i].d1nm}</a><ul class="one">`;
+        naviTag += `<li>
+        <a href="${navi[i].d1link}">${navi[i].d1nm}</a>
+        <ul class="d2">`;
     for(let j in navi[i].d2){
-        navione += `<li><a href="${navi[i].d2[j].d2link}">${navi[i].d2[j].d2nm}</li>`;
+        naviTag += `<li>
+        <a href="${navi[i].d2[j].d2link}">${navi[i].d2[j].d2nm}</li>`;
+        }
+        naviTag +=`</ul>
+                    </li>`;
     }
-    navione += `</ul></li>`;
-    }
-
-    document.getElementById("gnb").innerHTML = navione;
+    document.getElementById("gnb").innerHTML = naviTag;
 }
+
+// window.onload=()=>{
+
+//     let navione ="";
+//     for(let i in navi){
+//         navione +=`<li><a href="${navi[i].d1link}">${navi[i].d1nm}</a><ul class="one">`;
+//     for(let j in navi[i].d2){
+//         navione += `<li><a href="${navi[i].d2[j].d2link}">${navi[i].d2[j].d2nm}</li>`;
+//     }
+//     navione += `</ul></li>`;
+//     }
+
+//     document.getElementById("gnb").innerHTML = navione;
+// }
 
 
 
