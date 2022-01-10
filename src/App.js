@@ -12,7 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Gnb></Gnb>
+        <Gnb navilength='4'></Gnb>
         {/* 여기 삽입 */}
       </header>
     </div>
